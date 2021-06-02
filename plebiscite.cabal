@@ -1,0 +1,26 @@
+name:                plebiscite
+version:             0.1.0
+synopsis:            ...
+description:         ...
+homepage:            https://github.com/iokasimov/plebiscite
+license:             MIT
+license-file:        LICENSE
+extra-source-files:  CHANGELOG.md
+author:              Murat Kasimov
+maintainer:          Murat Kasimov <iokasimov.m@gmail.com>
+copyright:           Copyright (c) 2021 Murat Kasimov
+category:            Data, Control
+build-type:          Simple
+cabal-version:       >= 1.10
+
+source-repository head
+  type: git
+  location: https://github.com/iokasimov/plebiscite.git
+
+library
+  exposed-modules:
+  build-depends: base == 4.*, joint, telega
+  default-extensions: GeneralizedNewtypeDeriving, NoImplicitPrelude, LambdaCase,
+    OverloadedStrings, StandaloneDeriving, TypeApplications, ViewPatterns,
+    ScopedTypeVariables, TypeOperators, DataKinds, PackageImports
+  ghc-options: -Wall -fno-warn-tabs

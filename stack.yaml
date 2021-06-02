@@ -1,0 +1,17 @@
+resolver: lts-17.14
+
+packages:
+- '.'
+extra-deps:
+- git: git://github.com/iokasimov/telega
+  commit: ea5e06ba261ba4dbe74900a2788686b0d9d56b68
+- git: git://github.com/iokasimov/joint
+  commit: b8446484c38ead0eb8bd351d685c6e3cc4ec09b0
+
+flags: {}
+
+extra-package-dbs: []
+
+nix:
+  enable: true
+  shell-file: shell.nix

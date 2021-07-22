@@ -24,3 +24,7 @@ library
     OverloadedStrings, StandaloneDeriving, TypeApplications, ViewPatterns,
     ScopedTypeVariables, TypeOperators, DataKinds, PackageImports
   ghc-options: -Wall -fno-warn-tabs
+
+executable bot
+  main-is: Main.hs
+  build-depends: base == 4.*, joint, telega

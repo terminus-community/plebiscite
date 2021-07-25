@@ -18,7 +18,7 @@ source-repository head
   location: https://github.com/iokasimov/plebiscite.git
 
 library
-  exposed-modules:
+  exposed-modules: Election.Condorcet
   build-depends: base == 4.*, joint, telega
   default-extensions: GeneralizedNewtypeDeriving, NoImplicitPrelude, LambdaCase,
     OverloadedStrings, StandaloneDeriving, TypeApplications, ViewPatterns,
@@ -27,4 +27,7 @@ library
 
 executable bot
   main-is: Main.hs
-  build-depends: base == 4.*, joint, telega
+  build-depends: base == 4.*, lens, joint, async, telega, text, optparse-applicative, wai, wai-extra, warp, servant, servant-server
+  default-extensions: GeneralizedNewtypeDeriving, LambdaCase,
+    OverloadedStrings, StandaloneDeriving, TypeApplications, ViewPatterns,
+    ScopedTypeVariables, TypeOperators, DataKinds, PackageImports

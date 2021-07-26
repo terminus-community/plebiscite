@@ -4,7 +4,7 @@ packages:
 - '.'
 extra-deps:
 - git: git://github.com/iokasimov/telega
-  commit: ea5e06ba261ba4dbe74900a2788686b0d9d56b68
+  commit: b48bca01042b55d9bc230dc66ffd320148f8bc2a
 - git: git://github.com/iokasimov/joint
   commit: b8446484c38ead0eb8bd351d685c6e3cc4ec09b0
 

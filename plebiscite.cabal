@@ -19,7 +19,7 @@ source-repository head
 
 library
   exposed-modules: Election.Condorcet
-  build-depends: base == 4.*, joint, telega
+  build-depends: base == 4.*, joint, telega, lens
   default-extensions: GeneralizedNewtypeDeriving, NoImplicitPrelude, LambdaCase,
     OverloadedStrings, StandaloneDeriving, TypeApplications, ViewPatterns,
     ScopedTypeVariables, TypeOperators, DataKinds, PackageImports
